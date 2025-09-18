@@ -33,8 +33,16 @@ function logout() {
   }, 7500);
 }
 
-login();
-getData();
-calculateData();
-sendSMS();
-logout();
+async function main() {
+  try {
+    await login();
+    await getData();
+    await calculateData();
+    await sendSMS();
+    await logout();
+  } catch (error) {
+    console.error("Error occurred:", error);
+  }
+}
+
+main();

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM Example</title>
+  </head>
+  <body>
+    <!-- <p>This is an old Paragraph</p>
+    <button onclick="addPara()"> Click here to add a new Paragraph</button>
+    <script>
+        function addPara(){
+            const para = document.createElement('p');
+            para.textContent = "This is a new Paragraph";
+            para.style.background = "yellow";
+            para.style.color = "black";
+            document.body.appendChild(para);
+        }
+    </script> -->
+
+    <script>
+        const f1 = async () =>{
+    try{
+        const res = await fetch(url);
+        const data = await res.json();
+        console.log("Data : ", data);
+    }
+    catch(err){
+        console.log("Error : ",err);
+    }
+    finally{
+        console.log("Inside finally");
+    }
+}
+
+f1();
+    </script>
+  </body>
+</html>

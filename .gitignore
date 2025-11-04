@@ -1,5 +1,6 @@
 react-app/node_modules/
 book-vite-app/node_modules/
+shopping-vite-app/client/node_modules
 react-app/dist/
 react-app/.parcel-cache/
 
